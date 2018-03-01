@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BRCA VarDb</title>
+</head>
+<body>
+    <h1>BRCA1 Patients</h1>
+    <p>
+	{% for patient in data%}
+        {{ data.forename}}
+        {{ data.surname }}
+        {{ data.reg_date }}
+	{% endfor %}
+    </p>
+     <a href="/">logout</a>
+</body>
+</html>
